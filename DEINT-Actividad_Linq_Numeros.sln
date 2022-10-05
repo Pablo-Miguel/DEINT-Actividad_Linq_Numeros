@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEINT-Actividad_Linq_Numeros", "DEINT-Actividad_Linq_Numeros\DEINT-Actividad_Linq_Numeros.csproj", "{B8D1A97B-7600-4B36-ADF7-2D83D4A5EC71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEINT-Actividad_Linq_Libros", "DEINT-Actividad_Linq_Libros\DEINT-Actividad_Linq_Libros.csproj", "{2AEFFA71-A8E9-437F-9094-8436C80ACAF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8D1A97B-7600-4B36-ADF7-2D83D4A5EC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D1A97B-7600-4B36-ADF7-2D83D4A5EC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D1A97B-7600-4B36-ADF7-2D83D4A5EC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D1A97B-7600-4B36-ADF7-2D83D4A5EC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AEFFA71-A8E9-437F-9094-8436C80ACAF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AEFFA71-A8E9-437F-9094-8436C80ACAF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AEFFA71-A8E9-437F-9094-8436C80ACAF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AEFFA71-A8E9-437F-9094-8436C80ACAF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {485840B5-FF01-42F6-9F12-47415FED1CF3}
+	EndGlobalSection
+EndGlobal
