@@ -38,7 +38,7 @@ Console.WriteLine("Mostrar en consola los 3 libros con más ventas.");
 var tresLibrMasVentas = libros.OrderBy(x => x.Ventas).TakeLast(3);
 
 foreach (var i in tresLibrMasVentas) { 
-    Console.WriteLine(i.Titulo);
+    Console.WriteLine("\t" + i.Titulo);
 }
 
 Console.WriteLine();
@@ -49,7 +49,7 @@ var tresLibrMenosVentas = libros.OrderBy(x => x.Ventas).Take(3);
 
 foreach (var i in tresLibrMenosVentas)
 {
-    Console.WriteLine(i.Titulo);
+    Console.WriteLine("\t" + i.Titulo);
 }
 
 Console.WriteLine();
@@ -61,7 +61,7 @@ var nombAutorMas10Caract = autores.Where(x => x.Nombre.Replace(" ", String.Empty
 
 foreach (var i in nombAutorMas10Caract)
 {
-    Console.WriteLine($"ID: {i.IDAutor} -> {i.Nombre}");
+    Console.WriteLine($"\tID: {i.IDAutor} -> {i.Nombre}");
 }
 
 Console.WriteLine();
@@ -72,7 +72,7 @@ var librosAgrupAutor = libros.GroupBy(x => x.IDAutor);
 
 foreach (var i in librosAgrupAutor) {
     foreach (var j in i) {
-        Console.WriteLine($"IDAutor: {i.Key} --> Libro: {j.Titulo}");
+        Console.WriteLine($"\tIDAutor: {i.Key} --> Libro: {j.Titulo}");
     }
 }
 
@@ -83,7 +83,7 @@ Console.WriteLine("Mostrar en consola los libros publicados hace menos de 50 añ
 var libroHaceMas50A = libros.Where(x => (new DateOnly().Year - x.FechaPublicacion) <= 50).ToList();
 
 foreach (var i in libroHaceMas50A) {
-    Console.WriteLine(i.Titulo);
+    Console.WriteLine("\t" + i.Titulo);
 }
 
 Console.WriteLine();
@@ -92,7 +92,7 @@ Console.WriteLine("Mostrar en consola el libro más viejo");
 
 var libroMasViejo = libros.OrderByDescending(x => x.FechaPublicacion).First();
 
-Console.WriteLine(libroMasViejo.Titulo);
+Console.WriteLine("\t" + libroMasViejo.Titulo);
 
 Console.WriteLine();
 //Mostrar en consola los libros que comiencen con "El".
@@ -101,7 +101,7 @@ Console.WriteLine("Mostrar en consola los libros que comiencen con 'El'.");
 var libresComEl = libros.Where(x => x.Titulo.StartsWith("El")).ToList();
 
 foreach (var i in libresComEl) {
-    Console.WriteLine(i.Titulo);
+    Console.WriteLine("\t" + i.Titulo);
 }
 
 Console.WriteLine();
