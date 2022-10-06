@@ -90,7 +90,7 @@ Console.WriteLine();
 //Mostrar en consola el libro más viejo
 Console.WriteLine("Mostrar en consola el libro más viejo");
 
-var libroMasViejo = libros.OrderByDescending(x => x.FechaPublicacion).First();
+var libroMasViejo = libros.MinBy(x => x.FechaPublicacion);
 
 Console.WriteLine("\t" + libroMasViejo.Titulo);
 
